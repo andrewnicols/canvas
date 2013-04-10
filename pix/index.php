@@ -29,10 +29,10 @@ function uploadDone() {
 window.onload=init;
 </script>
 </head>
-<form id="file_upload_form" method="post" enctype="multipart/form-data" action="upload.php">
+<!--<form id="file_upload_form" method="post" enctype="multipart/form-data" action="upload.php">
 <input name="file" id="file" size="27" type="file" />
 <input type="submit" name="action" value="Upload" /><br />
 <iframe id="upload_target" name="upload_target" src="" style="width:0px;height:0px;border:0px solid #fff;"></iframe>
 </form>
-
+-->
 </html>

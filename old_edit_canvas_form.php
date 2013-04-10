@@ -76,25 +76,11 @@ class qtype_canvas_edit_form extends question_edit_form {
                 get_string('casesensitive', 'qtype_canvas'), $menu);
  		Voma exclude end */
         /* Voma start edit */
-
-
-
-
-
-
-        $mform->addElement('header', 'Pick an image', 'Pick an image');
-       $mform->addElement('filepicker', 'userfile', get_string('file'), null,
-               array('maxbytes' => $maxbytes, 'accepted_types' => '*'));
-        $mform->addElement('html', '<div id="qe:f_" class="qtype_canvas">');
-               $mform->addElement('static', 'drawsolution',
-                       get_string('correctanswers', 'qtype_canvas'),
-                       get_string('filloutoneanswer', 'qtype_canvas'));
-               $mform->closeHeaderBefore('drawsolution');
-
-
-
-
-/* Voma end edit */
+        $mform->addElement('static', 'drawsolution',
+                get_string('correctanswers', 'qtype_canvas'),
+                get_string('filloutoneanswer', 'qtype_canvas'));
+        $mform->closeHeaderBefore('drawsolution');
+        /* Voma end edit */
 
         $this->add_per_answer_fields($mform, get_string('answerno', 'qtype_canvas', '{no}'),
                 question_bank::fraction_options());
